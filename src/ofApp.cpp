@@ -51,9 +51,7 @@ void ofApp::setup(){
 
 	// Allocating and clearing the FBO to begin with.
 	canvas_fbo.allocate(ofGetWidth(), ofGetHeight(), GL_RGBA, 4);
-	canvas_fbo.begin();
-	ofClear(background_colour);
-	canvas_fbo.end();
+	clearCanvas();
 }
 
 //--------------------------------------------------------------
@@ -407,6 +405,10 @@ void ofApp::keyPressed(int key){
 			break;
 		case '=':
 			num_of_slices += 1;
+			break;
+		case 'c':
+			clearCanvas();
+			break;
 		default:
 			cout << "There is no brush bound to the " << "'" << char(key) << "'" << " key." << endl;
 			break;
@@ -421,4 +423,11 @@ void ofApp::mousePressed(int x, int y, int button){
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
 	paint_is_on = false;
+}
+
+void ofApp::clearCanvas()
+{
+	canvas_fbo.begin();
+		ofClear(background_colour);
+	canvas_fbo.end();
 }

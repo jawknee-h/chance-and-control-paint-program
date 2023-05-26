@@ -38,6 +38,8 @@ class ofApp : public ofBaseApp{
 		void line_brush(float x, float y, float speed);
 		void sand_worm_brush(float x, float y);
 		void caterpillar_brush(float x, float y);
+		
+		void clearCanvas();
 
 		enum brushes {
 			simple,
