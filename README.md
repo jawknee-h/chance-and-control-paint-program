@@ -5,22 +5,18 @@ An unorthodox paint program, written with C++ and openFrameworks in October 2022
 
 To run it you'll need to download openFrameworks, make a new project with the project generator and then copy the 'src' folder, addons.make file, and bin/data folder into the project directory. Then compile and run.
 
-## Demonstration images
+#### Brushes
 <p float="left">
-  <img src="/demo_images/brush_7_window.webp" width="100" />
-  <img src="/demo_images/brush_6_window.webp" width="100" /> 
-  <img src="/demo_images/brush_5_window.webp" width="100" />
+  <img src="/demo_images/brush_6_window.webp" width="18%" />
+  <img src="/demo_images/brush_5_window.webp" width="18%" /> 
+  <img src="/demo_images/brush_4_window.webp" width="18%" />
+  <img src="/demo_images/brush_3_window.webp" width="18%" />
+  <img src="/demo_images/brush_2_window.webp" width="18%" /> 
 </p>
 
-#### Brush 7
-![](https://github.com/jawknee-h/chance-and-control-paint-program/blob/main/demo_images/brush_7_window.webp)
-#### Brush 6
-![](https://github.com/jawknee-h/chance-and-control-paint-program/blob/main/demo_images/brush_6_window.webp)
-#### Brush 5
-![](https://github.com/jawknee-h/chance-and-control-paint-program/blob/main/demo_images/brush_5_window.webp)
-#### Brush 4
-![](https://github.com/jawknee-h/chance-and-control-paint-program/blob/main/demo_images/brush_4_window.webp)
-#### Brush 3
-![](https://github.com/jawknee-h/chance-and-control-paint-program/blob/main/demo_images/brush_3_window.webp)
-#### Brush 2
-![](https://github.com/jawknee-h/chance-and-control-paint-program/blob/main/demo_images/brush_2_window.webp)
+#### Slicing and Shifting
+The canvas can be split into multiple segments which will repeat.
+Pressing '-' will decrease the number of slices and '=' will increase.
+Pressing '[' or ']' will shift the canvas left or right.
+
+<img src="/demo_images/slicing_and_shifting_window.webp" width="30%">
